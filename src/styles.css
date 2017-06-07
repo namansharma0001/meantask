@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,700i,600,500');
+
+.my-container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor:default;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.datepicker-calendar-top {
+  background: #5F00AA !important;
+}
+
+.day:hover:not(.disabled) {
+  background: #5F00AA !important;
+}
+
+.day.selected {
+  background: #5F00AA !important;
+}
+
+.u-is-primary {
+  border: 1px solid #5F00AA !important;
+  background: #5F00AA !important;
+}
+
+.u-is-secondary {
+  border: 1px solid #5F00AA !important;
+  color: #5F00AA !important;
+}
+
+.datepicker-input-icon {
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  padding-bottom: 1vh;
+  color: transparent;  
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+<div class="loginPage">
+<div id="logoLoginContainer">
+</div>
+<div id="loginContainer">
+    <div id="loginDialog">
+        <div id="loginText">
+            Log in to your account
+        </div>
+        <div id="loginBorder"></div>
+        <form autocomplete="off" [formGroup]="loginForm" (ngSubmit)="loginUser($event)">
+            <input class="login-form" id="usernameInput" type="text" [maxlength]="30" formControlName="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+            <input class="login-form" id="passwordInput" type="password" [maxlength]="15" formControlName="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+            <br>
+            <button type="submit" [disabled]="!loginForm.valid || this.loginMessage == 'Please wait'" id="signInBtn">Sign In</button>
+            <p id="loginError" *ngIf="loginMessage">{{loginMessage}}</p>
+        </form>
+        <button id="signUpBtn" (click)="goToSignUp()">Sign Up</button>
+    </div>
+</div>
+</div>

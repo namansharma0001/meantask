@@ -1,0 +1,101 @@
+.loginPage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#logoLoginContainer {
+  width: 50%;
+  float: left;
+  background-color: #5F00AA;
+  height: 100vh;
+}
+
+#logoLogin {
+  width: 20vw;
+  margin-top: 40vh;
+  margin-left: 15vw;
+}
+
+#loginContainer {
+  width: 50%;
+  height: 100vh;
+  float: left;
+  background:linear-gradient(0deg,rgba(95,0,170,0.4),rgba(95,0,170,0.4)),url('../../img/Library.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  color: black;
+  border: 2px solid #5F00AA;
+  height: 5.5vh;
+  width: 30vw;
+  border-radius: 4px;
+  margin: 1vh 0px 1vh 0px;
+}
+
+.login-form::-webkit-input-placeholder {
+  color: black !important;
+}
+.login-form::-moz-placeholder {
+  color: black !important;
+}
+
+.login-form:focus, #signInBtn:focus {
+  outline:none !important;
+}
+
+
+
+#loginError {
+  font-size: small;
+  color: rgba(180, 30, 68, 0.9);
+  font-weight: 700;
+  margin: 2vh;
+}
+
+
+
+#loginDialog {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  margin-top: 33vh;
+  height: 35vh;
+  min-height: 280px;
+  margin-left: 7.5vw;
+  width: 35vw;
+  padding: 2vh 2.5vw 2vh 2.5vw;
+}
+
+
+#loginText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 1vh;
+}
+
+#loginBorder {
+  height: 2px;
+  width: 20vw;
+  margin: auto;
+  background-color: #5F00AA;
+  margin-bottom: 1.5vh
+}
+
+#signInBtn {
+  height: 4.5vh;
+  width: 30vw;
+  background: #5F00AA;
+  color: white;
+  margin-top: 1vh;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+}
+
+#signInBtn:active {
+  background: linear-gradient(0deg,#5F00AA 50%,#8D76B9)
+}
